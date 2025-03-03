@@ -114,12 +114,35 @@ class Exercicio3
 
 class Exercicio4
 {
-    
     public static void Executar()
     {
-        
+        // Cadastro de dados, organizados em um dicionário
+        Dictionary<string, decimal> faturamentoEstados = new Dictionary<string, decimal>
+        {
+            { "sp", 67836.43m },
+            { "rj", 36678.66m },
+            { "mg", 29229.88m },
+            { "es", 27165.48m },
+            { "outros", 19849.53m }
+        };
+
+        // Calculando o total
+        decimal totalFaturamento = 0;
+        foreach (var valor in faturamentoEstados.Values)
+        {
+            totalFaturamento += valor;
+        }
+
+        // Exibindo os percentuais
+        Console.WriteLine("\nO percentual de representação que cada estado foi:");
+        foreach (var estado in faturamentoEstados)
+        {
+            decimal percentual = (estado.Value / totalFaturamento) * 100;
+            Console.WriteLine($"{estado.Key}: {percentual:F2}%");
+        }
     }
 }
+
 
 class Exercicio5
 {
@@ -134,6 +157,7 @@ class Program
 {
     static void Main()
     {
+        /*
         // Chama os métodos de cada exercício
         // Exercício 1
         Console.WriteLine("Exercício 1");
@@ -149,6 +173,7 @@ class Program
         Console.WriteLine("Exercício 3");
         Exercicio3.Executar();
         Console.WriteLine();
+        */
 
         // Exercício 4
         Console.WriteLine("Exercício 4");
