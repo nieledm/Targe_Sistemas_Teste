@@ -146,10 +146,39 @@ class Exercicio4
 
 class Exercicio5
 {
-    
+    // Função para inverter string sem usar funções prontas
+    public static string InverterString(string s)
+    {
+        // Verifica se a string está vazia ou contém apenas espaços
+        if (string.IsNullOrEmpty(s) || string.IsNullOrWhiteSpace(s))
+        {
+            return "Erro: Nenhuma string válida foi informada.";
+        }
+
+        // Variável para armazenar a string invertida
+        string resultado = "";
+
+        // Laço para percorrer a string de trás para frente
+        for (int i = s.Length - 1; i >= 0; i--)
+        {
+            resultado += s[i];
+        }
+
+        return resultado;
+    }
+
     public static void Executar()
     {
-        
+        try
+        {
+            Console.Write("Informe uma string: ");
+            string input = Console.ReadLine();
+            Console.WriteLine($"String invertida: {InverterString(input)}");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Erro: {e.Message}");
+        }
     }
 }
 
@@ -157,7 +186,7 @@ class Program
 {
     static void Main()
     {
-        /*
+        
         // Chama os métodos de cada exercício
         // Exercício 1
         Console.WriteLine("Exercício 1");
@@ -173,7 +202,7 @@ class Program
         Console.WriteLine("Exercício 3");
         Exercicio3.Executar();
         Console.WriteLine();
-        */
+        
 
         // Exercício 4
         Console.WriteLine("Exercício 4");
