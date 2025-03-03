@@ -1,0 +1,15 @@
+d:\teste_target\C#_codes\bin\Debug\net9.0\C#_codes.exe
+d:\teste_target\C#_codes\bin\Debug\net9.0\C#_codes.deps.json
+d:\teste_target\C#_codes\bin\Debug\net9.0\C#_codes.runtimeconfig.json
+d:\teste_target\C#_codes\bin\Debug\net9.0\C#_codes.dll
+d:\teste_target\C#_codes\bin\Debug\net9.0\C#_codes.pdb
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.GeneratedMSBuildEditorConfig.editorconfig
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.AssemblyInfoInputs.cache
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.AssemblyInfo.cs
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.csproj.CoreCompileInputs.cache
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.sourcelink.json
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.dll
+d:\teste_target\C#_codes\obj\Debug\net9.0\refint\C#_codes.dll
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.pdb
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.genruntimeconfig.cache
+d:\teste_target\C#_codes\obj\Debug\net9.0\ref\C#_codes.dll
