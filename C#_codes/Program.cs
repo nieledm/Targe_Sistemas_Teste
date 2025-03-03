@@ -1,4 +1,8 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
+
 
 class Exercicio1
 {
@@ -53,28 +57,76 @@ class Exercicio2
 
 class Exercicio3
 {
-    // Adapte o exercício 3 aqui, criando um método Executar()
+    public class Dia
+    {
+        public decimal valor { get; set; }
+    }
+
     public static void Executar()
     {
-        // Seu código do exercício 3 vai aqui
+        // Carregando os dados do JSON
+        string json = File.ReadAllText(@"D:\teste_target\dados.json");
+        List<Dia> dados = JsonConvert.DeserializeObject<List<Dia>>(json);
+
+        // Filtrando dias com faturamento maior que zero
+        List<decimal> faturamentoDiario = new List<decimal>();
+        foreach (var dia in dados)
+        {
+            if (dia.valor > 0)
+            {
+                faturamentoDiario.Add(dia.valor);
+            }
+        }
+
+        // Calculando o menor e o maior valor de faturamento
+        decimal menorFaturamento = decimal.MaxValue;
+        decimal maiorFaturamento = decimal.MinValue;
+        foreach (var valor in faturamentoDiario)
+        {
+            if (valor < menorFaturamento) menorFaturamento = valor;
+            if (valor > maiorFaturamento) maiorFaturamento = valor;
+        }
+
+        // Calculando a média mensal
+        decimal soma = 0;
+        foreach (var valor in faturamentoDiario)
+        {
+            soma += valor;
+        }
+        decimal mediaMensal = soma / faturamentoDiario.Count;
+
+        // Contando dias com faturamento acima da média
+        int diasAcimaDaMedia = 0;
+        foreach (var valor in faturamentoDiario)
+        {
+            if (valor > mediaMensal)
+            {
+                diasAcimaDaMedia++;
+            }
+        }
+
+        // Exibindo os resultados
+        Console.WriteLine($"Menor faturamento: R$ {menorFaturamento:F2}");
+        Console.WriteLine($"Maior faturamento: R$ {maiorFaturamento:F2}");
+        Console.WriteLine($"Dias com faturamento acima da média: {diasAcimaDaMedia}");
     }
 }
 
 class Exercicio4
 {
-    // Adapte o exercício 4 aqui, criando um método Executar()
+    
     public static void Executar()
     {
-        // Seu código do exercício 4 vai aqui
+        
     }
 }
 
 class Exercicio5
 {
-    // Adapte o exercício 5 aqui, criando um método Executar()
+    
     public static void Executar()
     {
-        // Seu código do exercício 5 vai aqui
+        
     }
 }
 

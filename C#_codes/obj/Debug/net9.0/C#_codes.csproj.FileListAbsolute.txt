@@ -13,3 +13,6 @@ d:\teste_target\C#_codes\obj\Debug\net9.0\refint\C#_codes.dll
 d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.pdb
 d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.genruntimeconfig.cache
 d:\teste_target\C#_codes\obj\Debug\net9.0\ref\C#_codes.dll
+d:\teste_target\C#_codes\bin\Debug\net9.0\Newtonsoft.Json.dll
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.csproj.AssemblyReference.cache
+d:\teste_target\C#_codes\obj\Debug\net9.0\C#_codes.csproj.Up2Date
