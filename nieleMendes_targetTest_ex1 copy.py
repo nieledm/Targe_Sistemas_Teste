@@ -11,4 +11,4 @@ while k < indice:
     soma = soma + k
 
 #Impressão do resultado no terminal
-print (soma)
+print ("O valor da soma é: ",soma)
