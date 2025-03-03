@@ -1,3 +1,5 @@
+#Questão 3
+
 import json
 
 # Carregando os dados do JSON

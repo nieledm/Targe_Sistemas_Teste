@@ -1,3 +1,5 @@
+#Questão 4
+
 #Cadastro de dados, organizados em um dicionário
 faturamento_estados = {
     'sp' : 67836.43,
